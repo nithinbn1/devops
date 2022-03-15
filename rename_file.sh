@@ -1,7 +1,0 @@
-#!/bin/bash
-ls | grep -i .txt$ > output
-while read line
-do
-	read=`echo $line | awk -F "." '{print $1}'`
-	mv $name.txt $name.html
-done< output
