@@ -7,13 +7,12 @@ pipeline {
         stage('one') {
            steps{
             sh echo "good morning"
-            sleep 10
+            }
             }
         }
        stage('two') { 
            steps{
           sh echo "devops class" 
-          sleep 20
            }
        }
     }
