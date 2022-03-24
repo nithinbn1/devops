@@ -3,14 +3,12 @@ pipeline {
    stages{
    stage('test') {
       steps {
-   parallel {
-        stage('one') {
-           steps{
+          parallel {
+        ubuntu: {
             sh echo "good morning"
             }
         }
-       stage('two') { 
-           steps{
+        ubuntu1: {
           sh echo "devops class" 
            }
        }
