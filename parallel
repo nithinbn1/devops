@@ -5,17 +5,17 @@ pipeline {
    parallel {
         stage('one') {
            steps{
-            sh echo "good morning"
+             echo "good morning"
             }
-        }
         }
        stage('two') { 
            steps{
-          sh echo "devops class"
+           echo "devops class"
            }
            }
        }
     }
+}
 }
    
 
