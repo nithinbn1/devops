@@ -6,12 +6,12 @@ pipeline {
    parallel {
         stage('one') {
            steps{
-            sh "echo "good morning""
+            sh echo "good morning"
             }
         }
        stage('two') { 
            steps{
-          sh echo "devops class""
+          sh echo "devops class"
            }
            }
        }
