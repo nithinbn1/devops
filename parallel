@@ -3,15 +3,18 @@ pipeline {
    stages{
    stage('test') {
       steps {
-          parallel {
-        ubuntu: {
-            sh echo "good morning"
+   parallel {
+        stage('one') {
+           steps{
+            sh "echo "good morning""
             }
         }
-        ubuntu1: {
-          sh echo "devops class" 
+       stage('two') { 
+           steps{
+          sh "echo "devops class""
+           }
            }
        }
     }
 }
-}
+   }
