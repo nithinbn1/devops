@@ -6,17 +6,16 @@ pipeline {
         stage('one') {
            steps{
             sh echo "good morning"
-            "good morning"
             }
+        }
         }
        stage('two') { 
            steps{
           sh echo "devops class"
-          "devops class"
            }
            }
        }
     }
 }
-   }
+   
 
