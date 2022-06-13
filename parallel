@@ -4,8 +4,8 @@ pipeline {
    stage('test') {
    parallel {
         stage('one') {
-           steps{
-             echo "good morning "
+           steps {
+             echo "good morning"
             }
         }
        stage('two') { 
